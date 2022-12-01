@@ -41,6 +41,10 @@ main .app{
     display: flex;
 }
 
+.logo img{
+    width: 70%;
+}
+
 main .app > *{
     height: 100%;
 }
