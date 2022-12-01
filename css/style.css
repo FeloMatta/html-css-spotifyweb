@@ -10,16 +10,122 @@
 
 }
 
+body{
+    min-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
 
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/* MAIN */
-main{
-
+.my-row .my-col{
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 
 
+
+/* MAIN */
+main{
+    width: 100%;
+}
+
+main .app{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+main .app > *{
+    height: 100%;
+}
+
+main .app .navigation{
+    width: 250px;
+}
+
+main .app .content{
+    width: calc(100% - 250px);
+    overflow: auto;
+}
+
+main .app .content .cta{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    text-align: right;
+    padding: 30px;
+}
+
+main .app .content section{
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+main .app .content .content-nav{
+    text-align: center;
+    padding: 20px 0;
+}
+
+main .app .content .content-nav ul{
+    list-style: none;
+}
+
+main .app .content .content-nav ul li{
+    display: inline-block;
+}
+
+
 /* FOOTER */
 footer{
-    
+
+}
+
+footer .player{
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* DEBUG */
+.debug main .app{
+    background-color: green;
+}
+
+.debug main .app .navigation{
+    background-color: violet;
+}
+
+.debug main .app .content{
+    background-color: lightcoral;
+}
+
+.debug main .app .content .cta{
+    background-color: rgba(255, 255, 0, 0.5);
+    /* height: 100px; */
+}
+
+.debug footer .player{
+    color: white;
+}
+
+.debug footer .player > *{
+    background-color: red;
+    padding: 20px;
+}
+
+.debug .my-row .my-col{
+    background-color: blue;
+    height: 100px;
 }
