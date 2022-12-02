@@ -43,7 +43,25 @@ main .app{
 
 .logo img{
     width: 70%;
+    padding: 20px;
 }
+
+aside .menu-nav ul li img{
+    width: 30px;
+    color: #AAA9AA;
+}
+aside .menu-nav ul li a{
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #AAA9AA;
+}
+
+/* aside .menu-nav ul li img span{
+    text-decoration: none;
+    color: #AAA9AA;
+} */
 
 main .app > *{
     height: 100%;
@@ -53,9 +71,15 @@ main .app .navigation{
     width: 250px;
 }
 
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+}
+
 main .app .content{
     width: calc(100% - 250px);
     overflow: auto;
+    opacity: 1;
 }
 
 main .app .content .cta{
@@ -104,19 +128,19 @@ footer .player{
 
 /* DEBUG */
 .debug main .app{
-    background-color: green;
+    background-color: #141922;
 }
 
 .debug main .app .navigation{
-    background-color: violet;
+    background-color: #000000;
 }
 
 .debug main .app .content{
-    background-color: lightcoral;
+    background-color: rgba(0, 0, 0, 0.4);;
 }
 
 .debug main .app .content .cta{
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: #141922;
     /* height: 100px; */
 }
 
