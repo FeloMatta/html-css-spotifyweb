@@ -41,9 +41,20 @@ main .app{
     display: flex;
 }
 
+/* aside{
+    padding-left: 20px;
+} */
+
+/* PARTE SUPERIORE ASIDE */
 .logo img{
     width: 70%;
     padding: 20px;
+}
+
+aside .menu-nav ul{
+    /* width: 30px; */
+    color: #AAA9AA;
+    text-decoration: none;
 }
 
 aside .menu-nav ul li img{
@@ -58,11 +69,26 @@ aside .menu-nav ul li a{
     color: #AAA9AA;
 }
 
-/* aside .menu-nav ul li img span{
-    text-decoration: none;
-    color: #AAA9AA;
-} */
+/* PLAYLIST */
 
+.playlist {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.create-playlist i{
+    padding: 20px;
+    background-color: grey;
+    text-size-adjust: 10rem;
+}
+
+.playlist nav{
+    padding-top: 20px;
+}
+
+
+
+/* fine playlist */
 main .app > *{
     height: 100%;
 }
@@ -76,6 +102,7 @@ a{
     color: rgba(255, 255, 255, 0.4);
 }
 
+/* CONTENT */
 main .app .content{
     width: calc(100% - 250px);
     overflow: auto;
@@ -136,7 +163,7 @@ footer .player{
 }
 
 .debug main .app .content{
-    background-color: rgba(0, 0, 0, 0.4);;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .debug main .app .content .cta{
