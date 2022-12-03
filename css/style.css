@@ -54,7 +54,8 @@ main .app{
 aside .menu-nav ul{
     /* width: 30px; */
     color: #AAA9AA;
-    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
 }
 
 aside .menu-nav ul li img{
@@ -86,7 +87,11 @@ aside .menu-nav ul li a{
     padding-top: 20px;
 }
 
-
+.name-playlist ul{
+    list-style: none;
+    /* font-size: 13px; */
+    line-height: 35px;
+}
 
 /* fine playlist */
 main .app > *{
@@ -102,7 +107,26 @@ a{
     color: rgba(255, 255, 255, 0.4);
 }
 
+/* PARTE INFERIORE ASIDE */
+.user-profile{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.user-profile img{
+    width: 30px;
+    background-color: grey;
+    border-radius: 100%;
+}
+
+/* FINE PARTE INFERIORE ASIDE */
+
 /* CONTENT */
+/* parte superiore */
 main .app .content{
     width: calc(100% - 250px);
     overflow: auto;
@@ -116,7 +140,7 @@ main .app .content .cta{
     text-align: right;
     padding: 30px;
 }
-
+/* parte inferiore */
 main .app .content section{
     padding: 0 15px;
     margin-bottom: 30px;
