@@ -117,6 +117,11 @@ a{
     padding-right: 20px;
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+}
+
 .user-profile img{
     width: 30px;
     background-color: grey;
@@ -170,6 +175,24 @@ footer .player{
     background-color: #282828;
     display: flex;
     justify-content: space-between;
+}
+
+.player .playing{
+    display: flex;
+    align-items: center;
+}
+
+.player .playing img{
+    height: 100%;
+    padding-right: 10px;
+}
+
+.player .playing:last-child{
+    font: bold;
+}
+
+.player .playing .grey{
+    color: grey;
 }
 
 
